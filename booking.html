@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Car Wash - Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🚗 Home Car Wash</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="booking.html" class="active">Booking</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <main class="page">
+
+        <h1>Book Your Car Wash</h1>
+
+        <p class="page-description">
+            Fill in the form below to schedule your car wash.
+        </p>
+
+
+        <div class="form-container">
+
+            <form id="bookingForm">
+
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="e.g. 0123456789"
+                    required
+                >
+
+
+                <label for="address">Home Address</label>
+
+                <textarea
+                    id="address"
+                    rows="4"
+                    placeholder="Enter your home address"
+                    required
+                ></textarea>
+
+
+                <label for="car">Car Model</label>
+
+                <input
+                    type="text"
+                    id="car"
+                    placeholder="e.g. Perodua Myvi"
+                    required
+                >
+
+
+                <label for="service">Select Service</label>
+
+                <select id="service" required>
+
+                    <option value="">
+                        -- Select a Service --
+                    </option>
+
+                    <option value="Basic Wash">
+                        Basic Wash - RM 20
+                    </option>
+
+                    <option value="Premium Wash">
+                        Premium Wash - RM 35
+                    </option>
+
+                    <option value="Full Detailing">
+                        Full Detailing - RM 80
+                    </option>
+
+                </select>
+
+
+                <label for="date">Preferred Date</label>
+
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+
+
+                <label for="time">Preferred Time</label>
+
+                <select id="time" required>
+
+                    <option value="">
+                        -- Select Time --
+                    </option>
+
+                    <option>9:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>1:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>4:00 PM</option>
+
+                </select>
+
+
+                <button type="submit" class="btn submit-btn">
+                    Confirm Booking
+                </button>
+
+            </form>
+
+
+            <div id="bookingMessage"></div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Home Car Wash System. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
